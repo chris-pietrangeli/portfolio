@@ -109,27 +109,30 @@ h2 {
 .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    flex: 1 0 0;
 }
 
 .project1 {
-    width: 100%;
-    padding: 0;
-    margin: 8px;
+    width: 80vw;
+    padding: 10px;
+    margin: 10px;
     display: flex;
     align-items: flex-end;
     background-size: cover;
     border: 4px solid var(--color-2);
     opacity: 0.5;
     position: relative;
-    min-height: 600px;
+    min-height: 400px;
+}
+
+.small-projects {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
 .project {
-    padding: 0;
     margin: 8px;
+    padding: 0;
     height: 170px;
     display: flex;
     align-items: flex-end;
@@ -137,7 +140,7 @@ h2 {
     border: 4px solid var(--color-2);
     opacity: 0.5;
     position: relative;
-    min-width: 50%;
+    width: 40vw;
 }
 
 .project:hover {
@@ -180,6 +183,7 @@ h3 {
 #surf-report {
     background-image: url("../images/surf-report.jpeg");
 }
+
 
 #led-wall {
     background-image: url("../images/LED-Wall.png");
