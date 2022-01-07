@@ -1,11 +1,11 @@
 :root {
-    --bg: #abc4f7;
+    --bg: #edf3ff;
     --color-1: #3e485c;
     --color-2: #4174d9;
 }
 
 body {
-    background-color: white;
+    background-color: var(--bg);
     padding: 0;
     margin: 0;
 }
@@ -87,7 +87,7 @@ nav ul li a {
 section {
     display: flex;
     color: var(--color-1);
-    background-color: white;
+    background-color: var(--bg);
     padding: 36px 0px 10px 0px;
 }
 
@@ -210,4 +210,10 @@ h3 {
 .contact a {
     color: var(--color-1);
     text-decoration: none;
+}
+
+/* media queries */
+
+@media screen and (max-width: 980px) {
+     
 }
