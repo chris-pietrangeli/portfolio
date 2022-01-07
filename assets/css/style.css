@@ -1,208 +1,213 @@
-* {
-    box-sizing: border-box;
+:root {
+    --bg: #abc4f7;
+    --color-1: #3e485c;
+    --color-2: #4174d9;
+}
+
+body {
+    background-color: white;
     padding: 0;
     margin: 0;
 }
 
-body {
-    background-color: #d9dcd6;
-}
-
 /* HEADER / NAV BAR STYLES START */
-.header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+header {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--color-1);
+	height: 85px;
+	align-items: center;
+	top: 0;
+	z-index: 9999;
 }
 
-.header h1 {
-    display: inline-block;
-    font-size: 48px;
+.name {
+	display: flex;
+	padding: 0;
+	margin: 0;
 }
 
-.header h1 .seo {
-    color: #d9dcd6;
-}
-
-.header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-.header nav ul {
-    list-style-type: none;
-}
-
-.header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-/* HEADER / NAVBAR STYLES END */
-
-a {
-    color: #ffffff;
+.name a {
+	color: var(--color-1);
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
+h1 {
+	margin: 0;
+	padding: 5px 15px 5px 30px;
+	background-color: var(--color-2);
+	font-size: 40px;
 }
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	padding-left: 0;
+	align-items: flex-end;
+}
+
+nav ul li {
+	padding: 10px;
+	margin: 5px;
+	font-size: 16px;
+}
+
+nav ul li a {
+	color: var(--color-2);
+    text-decoration: none;
+    border-bottom: 4px solid var(--color-2);
+}
+/* End Header/navbar*/
 
 /* HERO STYLES START */
 .hero {
-    height: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-image: url("../images/hero-bg.jpeg");
     background-size: cover;
     background-position: center;
+}
+
+.subtitle {
+    color: var(--color-1);
+    background-color: var(--color-2);
+    margin: 50px 75px;
+    padding: 15px;
+    font-size: 25px;
 }
 /* HERO STYLES END */
 
 /* STYLE ALL SECTION TAGS */
-.float-left {
-    float: left;
-    margin-right: 25px;
+
+section {
+    display: flex;
+    color: var(--color-1);
+    background-color: white;
+    padding: 36px 0px 10px 0px;
 }
 
-.float-right {
-    float: right;
-    margin-left: 25px;
+.titles {
+    flex: 0 0 auto;
+    padding: 5px 10px;
+    border-right: 4px solid var(--color-1);
+    width: 150px;
+    margin: 0 35px 0 35px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    text-align: right;
 }
 
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
+.projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 80px;
+    max-height: 600px;
+    flex: 1 0 0;
+}
+
+.project {
+    padding: 0;
+    margin: 8px;
+    height: 170px;
+    min-width: 300px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    border: 4px solid var(--color-2);
+    opacity: 0.5;
+    position: relative;
+}
+
+.project:hover {
+    opacity: 1.0;
+}
+
+.project a {
+    position: absolute;
+    width: 100%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+.project-name {
+    background-color: var(--color-2);
+    padding: 20px 10px 10px 10px;
+    margin: 0;
     margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-
-/* FOOTER STYLES START */
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
-.footer h2 {
+h3 {
+    padding: 0;
+    padding-bottom: 12px;
+    margin: 0;
     font-size: 20px;
 }
-/* END FOOTER STYLES */
+
+.project-name p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+#surf-report {
+    background-image: url("../images/surf-report.jpeg");
+}
+
+#led-wall {
+    background-image: url("../images/LED-Wall.png");
+}
+
+#calculator {
+    background-image: url("../images/calculator.jpeg");
+}
+
+#pastel {
+    background-image: url("../images/puzzel.webp");
+}
+
+#run-buddy {
+    background-image: url("../images/run-buddy.jpeg");
+}
+
+/* contact me*/
+
+.contact {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.contact ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    flex: 1;
+    margin-right: 60px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.contact ul li {
+    padding: 5px;
+    margin: 2px;
+    border-bottom: 4px solid var(--color-1);
+    font-size: 16px;
+}
+
+.contact a {
+    color: var(--color-1);
+    text-decoration: none;
+}
