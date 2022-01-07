@@ -5,10 +5,10 @@ Portfolio is still being completed
 ## Website
 Here is the link to the live website
 
-##Screenshot
+## Screenshot
 
-##Purpose 
+## Purpose 
 To create a portfolio to display the skills I am capable of as well as show the projects I have completed
 
-##Contributions
+## Contributions
 Created by Christopher Pietrangeli
