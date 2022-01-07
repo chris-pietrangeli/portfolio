@@ -3,8 +3,7 @@
 Portfolio is still being completed
 
 ## Website
-Here is the link to the live website:
-#############################
+Here is the link to the live website
 
 ##Screenshot
 
